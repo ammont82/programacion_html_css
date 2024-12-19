@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video con Subtítulos</title>
+</head>
+<body>
+    <h1>Video con Subtítulos</h1>
+    <video controls width="600">
+        <!-- Fuente del video -->
+        <source src="video.mp4" type="video/mp4">
+        
+        <!-- Subtítulos en varios idiomas -->
+        <track src="subtitulos_es.vtt" kind="subtitles" srclang="es" label="Español" default>
+        <track src="subtitulos_en.vtt" kind="subtitles" srclang="en" label="English">
+        
+        <!-- Mensaje si el navegador no soporta la etiqueta <video> -->
+        Tu navegador no soporta el elemento <code>video</code>.
+    </video>
+</body>
+</html>

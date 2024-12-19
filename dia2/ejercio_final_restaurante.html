@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabores del Mundo</title>
+    <style>
+        /* Estilos básicos en línea para una mejor presentación */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ff6347;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        section h2 {
+            color: #ff6347;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        table th {
+            background-color: #f4f4f4;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #ff6347;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sabores del Mundo</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#menu">Menú</a></li>
+                <li><a href="#reservas">Reservas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2>Bienvenidos a Sabores del Mundo</h2>
+            <p>Disfruta de una experiencia gastronómica única con platos de todas partes del mundo.</p>
+            <img src="restaurante.jpg" alt="Interior del restaurante" style="width:100%; max-width:600px;">
+            <ul>
+                <li>Platos auténticos de varias culturas.</li>
+                <li>Ambiente acogedor.</li>
+                <li>Atención personalizada.</li>
+            </ul>
+        </section>
+
+        <section id="menu">
+            <h2>Nuestro Menú</h2>
+            <table>
+                <tr>
+                    <th>Plato</th>
+                    <th>Descripción</th>
+                    <th>Precio</th>
+                </tr>
+                <tr>
+                    <td>Paella</td>
+                    <td>Un clásico español con mariscos y azafrán.</td>
+                    <td>12.99 €</td>
+                </tr>
+                <tr>
+                    <td>Sushi</td>
+                    <td>Bocados frescos con pescado y arroz.</td>
+                    <td>15.99 €</td>
+                </tr>
+                <tr>
+                    <td>Tacos</td>
+                    <td>Tradicionales mexicanos con guacamole.</td>
+                    <td>9.99 €</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="reservas">
+            <h2>Reservas</h2>
+            <form>
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Tu email" required><br><br>
+
+                <label for="telefono">Teléfono:</label><br>
+                <input type="tel" id="telefono" name="telefono" placeholder="Tu teléfono" required><br><br>
+
+                <label for="fecha-hora">Fecha y hora:</label><br>
+                <input type="datetime-local" id="fecha-hora" name="fecha-hora" required><br><br>
+
+                <button type="submit">Reservar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <address>Dirección: Calle Falsa 123, Ciudad Imaginaria</address>
+        <p>Teléfono: +123 456 789</p>
+        <p>
+            Síguenos en 
+            <a href="https://facebook.com">Facebook</a>, 
+            <a href="https://instagram.com">Instagram</a>, y 
+            <a href="https://twitter.com">Twitter</a>.
+        </p>
+    </footer>
+</body>
+</html>
+

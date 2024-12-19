@@ -1,0 +1,41 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    line-height: 1.6;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  .image-container {
+    margin: 20px auto;
+    width: 300px;
+  }
+  
+  .pixel-image {
+    width: 100%;
+    height: auto;
+    image-rendering: pixelated; /* Mantener el efecto pixelado */
+  }
+  
+  .rotated-image {
+    width: 100%;
+    height: auto;
+    image-orientation: 90deg; /* Rotar la imagen */
+    transform: rotate(90deg);
+  }
+  
+  .aspect-ratio-container {
+    width: 300px;
+    aspect-ratio: 16 / 9; /* Mantener la proporción 16:9 */
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    color: white;
+    font-weight: bold;
+  }
+  

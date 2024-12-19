@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Anidada</title>
+    <style>
+        ol {
+            counter-reset: item; /* Inicializa el contador */
+        }
+        li {
+            display: block;
+        }
+        li:before {
+            content: counters(item, ".") " "; /* Genera la numeración como 2.1, 2.1.1, etc. */
+            counter-increment: item; /* Incrementa el contador */
+        }
+    </style>
+</head>
+<body>
+    <ol>
+        <li>ffsss1</li>
+        <li>ff2dddd
+            <ol>
+                <li>ff21dddd
+                    <ol>
+                        <li>ff211</li>
+                        <li>ff211</li>
+                        <li>ff212</li>
+                    </ol>
+                </li>
+                <li>ff22</li>
+            </ol>
+        </li>
+    </ol>
+</body>
+</html>
+
+<!--
+Explicación:
+counter-reset: Resetea el contador al inicio de la lista.
+counter-increment: Incrementa el contador en cada elemento <li>.
+counters(item, "."): Combina los niveles del contador usando un punto como separador (por ejemplo, 2.1 o 2.1.1).
+Anidación automática: El estilo asegura que las sublistas sigan correctamente la jerarquía de numeración.
+Con este código, verás los números en el formato correcto.
+-->

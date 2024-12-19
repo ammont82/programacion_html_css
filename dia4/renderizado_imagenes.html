@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Propiedades de Imagen</title>
+  <link rel="stylesheet" href="renderizado_imagenes.css">
+</head>
+<body>
+  <h1>Ejemplo con image-rendering, image-orientation y aspect-ratio</h1>
+  
+  <div class="image-container">
+    <img src="pixel-art-example.jpeg" alt="Pixel Art" class="pixel-image">
+    <p>Image con <code>image-rendering: pixelated</code>.</p>
+  </div>
+  
+  <div class="image-container">
+    <img src="portrait-example.jpg" alt="Retrato" class="rotated-image">
+    <p>Image con <code>image-orientation: 90deg</code>.</p>
+  </div>
+  
+  <div class="aspect-ratio-container">
+    <p>Este div tiene un aspecto fijo de 16:9.</p>
+  </div>
+</body>
+</html>

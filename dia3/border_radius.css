@@ -1,0 +1,8 @@
+.element {
+    width: 100px;
+    border: 3px solid red;
+    border-radius: 25px;              /* 1 parámetro */
+    border-radius: 25% 50%;           /* 2 parámetros */
+    border-radius: 50px 25px 10px;    /* 3 parámetros */
+    border-radius: 25px 0 15px 50px;  /* 4 parámetros */
+  }

@@ -1,0 +1,23 @@
+.multiple-backgrounds {
+    width: 400px;
+    height: 300px;
+    /* Imagen base y la imagen superpuesta */
+    background-image: 
+        url('https://via.placeholder.com/100.png/FFD700/000000?text=Encima'),
+        url('https://via.placeholder.com/400x300.png/ADD8E6/FFFFFF?text=Fondo')
+        ;
+    /* Aseguramos que ambas imágenes tengan diferentes posiciones */
+    background-position: 
+    center 50px,    /* Imagen encima ligeramente desplazada */
+    center       /* Imagen base centrada */
+        ;  
+    /* Evitamos repeticiones */
+    background-repeat: 
+        no-repeat, 
+        no-repeat;
+    /* Tamaños específicos */
+    background-size: 
+    100px 80px,    /* Imagen encima tiene tamaño fijo */
+    cover;       /* Imagen base cubre todo */         
+    border: 1px solid black; /* Contorno visible */
+}

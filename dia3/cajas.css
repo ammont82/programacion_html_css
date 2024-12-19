@@ -1,0 +1,47 @@
+/* General */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #aa0c0c;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  /* Contenedor principal */
+  .container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  /* Estilo de las tarjetas */
+  .card {
+    background-color: white;
+    border: 20px double #0f0f0f;
+    border-radius: 8px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 36px; /* Espacio interno */
+    margin: 100px;  /* Espacio externo */
+    text-align: center;
+  }
+  
+  /* Imagen dentro de la tarjeta */
+  .card-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+    
+  }
+  
+  /* Título y texto */
+  .card-title {
+    font-size: 18px;
+    margin-bottom: 50px;
+    margin-top:50px;
+  }
+  
+  .card-text {
+    font-size: 14px;
+    color: #555;
+  }
+  

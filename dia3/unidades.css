@@ -1,0 +1,29 @@
+.container{
+    background-color: blue;
+    height: 500px;
+    width: 500px;     
+}
+.card{
+    width: 50%;
+    height: 80%;
+    background-color: green;
+}
+.card-title{
+    font-size: 1em;
+    color: white;
+}
+.card-text{
+    font-size: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:aqua;
+}
+.card-image{
+    width: auto;
+    height: auto;
+}
+#id1{
+    background-color: blueviolet;
+}
+li[class="classe2"]{
+    background-color: yellow;
+}

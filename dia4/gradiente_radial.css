@@ -1,0 +1,20 @@
+/* Aplica un gradiente radial */
+body {
+    height: 100vh; /* Establece la altura al 100% de la ventana */
+    margin: 0; /* Elimina márgenes predeterminados */
+    font-family: Arial, sans-serif; /* Fuente para el texto */
+    display: flex; /* Usa flexbox para centrar el contenido */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+}
+
+/* Estilo para el texto */
+.element {
+    width: 300px;
+    height: 300px;
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    background: radial-gradient(circle, #ff7e5f, #feb47b); /* Gradiente radial */
+    
+}

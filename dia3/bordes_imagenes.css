@@ -1,0 +1,38 @@
+/* Reset básico */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  /* Contenedor para centrar */
+  .container {
+    text-align: center;
+  }
+  
+  /* Botón con borde de imagen compleja */
+.image-border-button {
+    background-color: white;
+    color: #333;
+    font-size: 1.2em;
+    padding: 15px 30px;
+    border: 20px solid transparent; /* Base para el borde */
+    border-image-source: url('imagen_decorativa.jpg'); /* Imagen del borde */
+    border-image-slice: 80; /* Ajuste de la imagen al borde */
+    border-image-repeat: none; /* Repite la imagen para ajustarse */
+    border-radius: 12px; /* Esquinas redondeadas */
+    cursor: pointer;
+  }
+  
+  /* Efecto hover */
+  .image-border-button:hover {
+    background-color: rgb(123, 114, 114);
+    color: white;
+  }
+  
+  

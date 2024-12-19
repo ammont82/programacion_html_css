@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibilidad con CSS</title>
+    <link rel="stylesheet" href="visibilidad.css">
+</head>
+<body>
+    <h1>Ejercicio: Visibilidad con CSS</h1>
+    <div>
+        <div class="box box1" id="box1">Box 1</div>
+        <div class="box box2" id="box2">Box 2</div>
+        <div class="box box3" id="box3">Box 3</div>
+    </div>
+    <div>
+        <button onclick="toggleVisibility()">Toggle Visibility (Box 1)</button>
+        <button onclick="toggleOpacity()">Toggle Opacity (Box 2)</button>
+        <button onclick="toggleDisplay()">Toggle Display (Box 3)</button>
+    </div>
+
+    <script>
+        function toggleVisibility() {
+            const box = document.getElementById('box1');
+            box.classList.toggle('hidden'); // Alterna la clase 'hidden'
+        }
+
+        function toggleOpacity() {
+            const box = document.getElementById('box2');
+            box.classList.toggle('transparent'); // Alterna la clase 'transparent'
+        }
+
+        function toggleDisplay() {
+            const box = document.getElementById('box3');
+            box.classList.toggle('removed'); // Alterna la clase 'removed'
+        }
+    </script>
+</body>
+</html>

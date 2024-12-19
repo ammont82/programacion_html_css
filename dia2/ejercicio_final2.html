@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web Interactiva</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #0078D7;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        header a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        header a:hover {
+            text-decoration: underline;
+        }
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        textarea {
+            resize: vertical;
+            height: 100px;
+        }
+        button {
+            background-color: #0078D7;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #005BBB;
+        }
+        details {
+            margin-bottom: 20px;
+        }
+        details summary {
+            cursor: pointer;
+            font-weight: bold;
+        }
+        img {
+            width: 300px;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            transition: transform 0.3s;
+        }
+        img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menú de Navegación -->
+    <header>
+        <a href="#contacto">Contacto</a>
+        <a href="#informacion">Información Adicional</a>
+    </header>
+
+    <h1>Página Web Interactiva</h1>
+    
+    <!-- Formulario de Contacto -->
+    <form id="contacto">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" placeholder="Tu correo electrónico" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+        <label for="tema">Tema de Contacto:</label>
+        <select id="tema" name="tema" required>
+            <option value="soporte">Soporte Técnico</option>
+            <option value="ventas">Consultas de Ventas</option>
+            <option value="otros">Otros</option>
+        </select>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <!-- Acordeón con <details> y <summary> -->
+    <details id="informacion">
+        <summary>Información adicional sobre el formulario</summary>
+        <p>Por favor, completa todos los campos obligatorios para que podamos responder a tu solicitud lo antes posible.</p>
+    </details>
+
+    <!-- Botón con alerta -->
+    <button onclick="mostrarAlerta()">Haz clic para ver una alerta</button>
+
+    <!-- Imagen con cambio al pasar el cursor -->
+    <h2>Imagen Interactiva</h2>
+    <img 
+        src="https://via.placeholder.com/300x200?text=Imagen+1" 
+        alt="Imagen interactiva" 
+        onmouseover="cambiarImagen(this, 'https://via.placeholder.com/300x200?text=Imagen+2')" 
+        onmouseout="cambiarImagen(this, 'https://via.placeholder.com/300x200?text=Imagen+1')"
+    >
+
+    <script>
+        // Función para mostrar una alerta
+        function mostrarAlerta() {
+            alert("¡Gracias por visitar nuestra página!");
+        }
+
+        // Función para cambiar la imagen al pasar el cursor
+        function cambiarImagen(elemento, nuevaSrc) {
+            elemento.src = nuevaSrc;
+        }
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+  }
+  .gradient-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .gradient-box {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(4, 6, 26);
+    font-weight: bold;
+  }
+  .linear-gradient {
+    background: linear-gradient(to right, blue, pink);
+  }
+  .radial-gradient {
+    background: radial-gradient(circle, yellow, green);
+  }
+  .conic-gradient {
+    background: conic-gradient(red, orange, yellow, green, blue, purple, red);
+  }

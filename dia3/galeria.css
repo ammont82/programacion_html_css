@@ -1,0 +1,49 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px; /* Unidades absolutas */
+    background-color: #f7f9fc;
+  }
+  
+  /* Título de la galería */
+  .gallery-title {
+    font-size: 2em; /* Unidades relativas */
+    text-align: center;
+    margin-bottom: 2em; /* Unidades relativas */
+    color: #d00808;
+  }
+  
+  /* Contenedor principal de la galería */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Diseño adaptable */
+    gap: 1.5rem; /* Unidades relativas */
+    padding: 0 5%; /* Unidades relativas: margen lateral del contenedor */
+  }
+  
+  /* Estilo de cada imagen */
+  .gallery-item img {
+    width: 100%; /* Escala relativa al contenedor */
+    height: auto;
+    border: 5px solid #0b0a0a; /* Unidades absolutas */
+    border-radius: 8px; /* Unidades absolutas */
+    transition: transform 0.3s ease; /* Animación suave */
+  }
+  
+  /* Hover en las imágenes */
+  .gallery-item img:hover {
+    transform: scale(1.1); /* Efecto relativo */
+    border-color: #ff6600; /* Cambiar color del borde */
+  }
+  
+  /* Diseño responsivo */
+  @media (max-width: 768px) {
+    .gallery-title {
+      font-size: 1.5rem; /* Texto más pequeño en pantallas pequeñas */
+    }
+    .gallery {
+      gap: 1rem; /* Reducir espacio entre imágenes */
+    }
+  }
+  

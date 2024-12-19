@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],       
+        select {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        button {
+            background-color: #0078D7;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #005BBB;
+        }
+        input[type="number"],
+        input[type="color"],
+        input[type="datetime-local"],
+        input[type="radio"],
+        input[type="file"] {
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="post">
+        <h2>Formulario de Registro</h2>
+        
+        <!-- Campo de Nombre -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" 
+        placeholder="Ingresa tu nombre y apellidos" required>
+        
+        <!-- Campo de Correo Electrónico -->
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" 
+        placeholder="Ingresa tu correo electrónico" required>
+        
+        <!-- Campo de Contraseña -->
+        <label for="contraseña">Contraseña:</label>
+        <input type="password" id="contraseña" name="contraseña" 
+        placeholder="Crea una contraseña" required>
+        
+        <!-- Campo de Género -->
+        <label for="genero">Género:</label>
+        <select id="genero" name="genero" required >
+            <option value="masculino">Masculino</option>
+            <option value="femenino" selected>Femenino</option>
+            <option value="otro">Otro</option>
+        </select>
+        
+        <label for="color">Color:</label>
+        <input type="color" name="color">
+
+        <label for="fecha">Fecha:</label>
+        <input type="datetime-local" name="date">
+        
+
+        <label for="radio">Escoge una opcion:</label>
+        <input type="radio" name="radio" value="1">Texto1
+        <input type="radio" name="radio" value="2">Texto2
+
+        <label for="number">Number:</label>
+        <input type="number" value="5" min="1" max="10">
+
+        <label for="fichero">Fichero:</label>
+        <input type="file" multiple>
+
+        <label for="textarea">Text area:</label>
+        <textarea></textarea>
+        <!-- Casilla de Términos y Condiciones -->
+        <label>
+            <input type="checkbox" name="terminos" required>
+            Acepto los términos y condiciones
+        </label>
+        
+        <!-- Botón de Envío -->
+        <button type="submit">Registrarse</button>
+    </form>
+</body>
+</html>
+

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texto Alternativo en Video</title>
+</head>
+<body>
+    <h1>Ejemplo de texto alternativo en un video</h1>
+    <video controls width="600">
+        <source src="video.mp4" type="video/mp4">
+        <!-- Texto alternativo para navegadores que no soportan videos -->
+        Tu navegador no soporta el elemento de video. Por favor, actualiza tu navegador.
+        <!-- Subtítulos o texto alternativo con <track> -->
+        <track src="subtitulos.vtt" kind="subtitles" srclang="es" label="Español">
+    </video>
+</body>
+</html>

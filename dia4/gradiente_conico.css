@@ -16,5 +16,11 @@ body {
     font-size: 3rem;
     text-align: center;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    background: conic-gradient(from 0deg, #ff7e5f, #feb47b, #ff7e5f); /* Gradiente cónico */   
+    background: conic-gradient(from 0deg, #ff0000 0deg,
+    #ff3300 30deg,
+    #ff6600 60deg,
+    #ff9900 90deg,
+    #ffcc00 120deg,
+    #ffff00 150deg,
+    #ff0000 360deg ); /* Gradiente cónico */   
 }

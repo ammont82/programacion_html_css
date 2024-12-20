@@ -10,10 +10,10 @@ body {
 
 /* Estilo para el texto */
 .element {
-    width: 300px;
-    height:300px;
+    width: 500px;
+    height:500px;
     color: white;
     font-size: 3rem;
     text-align: center;
-    background: linear-gradient(to bottom, #ff7e5f, #feb47b); /* Gradiente de color */  
+    background: repeating-linear-gradient(to right, red, #202fa1  20% ); /* Gradiente de color */  
 }

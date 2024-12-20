@@ -1,0 +1,31 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Fuente principal */
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    font-family: 'Lobster', cursive; /* Fuente decorativa */
+    font-size: 3em;
+    color: #007bff;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700; /* Negrita */
+    color: #ff6347;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400; /* Regular */
+    font-size: 1.2em;
+}
+
+.highlight {
+    font-family: 'Lobster', cursive;
+    font-size: 1.5em;
+    color: #32cd32;
+}

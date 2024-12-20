@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+}
+
+h1 {
+    text-decoration: underline;
+    text-decoration-color: #007bff;
+    text-decoration-style: solid;
+    color: #333;
+}
+
+h2 {
+    text-decoration: line-through;
+    text-decoration-color: #ff6347;
+    text-decoration-style: double;
+    color: #555;
+}
+
+p {
+    text-decoration: overline;
+    text-decoration-color: #32cd32;
+    text-decoration-style: dashed;
+    font-size: 1.2em;
+    color: #666;
+}
+
+.highlight {
+    text-decoration: underline overline;
+    text-decoration-color: #ff69b4;
+    text-decoration-style: wavy;
+    font-weight: bold;
+    color: #c00;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: #ff4500;
+    text-decoration-style: solid;
+}

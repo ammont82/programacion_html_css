@@ -1,4 +1,3 @@
-/* Archivo: styles.css */
 body {
     margin: 0;
     display: flex;
@@ -21,7 +20,9 @@ body {
 
     /* Fondo con varias capas */
     background-image: 
-        url('fondo.jpg'), /* Imagen principal */
+    url('logo.jpg'),    
+    url('imagen1.jpg'), /* Imagen principal */
+        
         linear-gradient(135deg, rgba(255, 127, 127, 0.5), rgba(255, 255, 255, 0.2)), /* Gradiente decorativo */
         repeating-linear-gradient(45deg, #ffffff 0, #ffffff 5px, #f7f7f7 5px, #f7f7f7 10px); /* Patrón */
     background-size: cover, cover, 10px 10px;
@@ -31,6 +32,8 @@ body {
     /* Control de la zona del fondo */
     background-clip: border-box;
 }
+
+
 
 .tarjeta h1 {
     margin: 20px 0 10px;
@@ -60,4 +63,9 @@ body {
 .tarjeta a:hover {
     background-color: #fff;
     transform: scale(1.1);
+}
+
+.titulo {
+    background-color: #f7f7f7;
+    border-radius: 15px;
 }

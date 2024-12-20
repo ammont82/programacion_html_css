@@ -26,21 +26,26 @@ h1 {
 
 /* Colores diferentes */
 .tarjeta-1 {
-    color: white;
-    background-color: red; /* Nombre del color */
+    color: rgb(110, 85, 95);
+    background-color: rgb(189, 87, 24); /* Nombre del color */
 }
 
 .tarjeta-2 {
-    color: #fff; 
-    background-color: #ff6347; /* HEX */
+    color: #000; 
+    background-color: #77c745; /* HEX */
 }
 
 .tarjeta-3 {
-    color: rgb(255, 255, 255);
-    background-color: rgb(0, 128, 255); /* RGB */
+    color: rgb(55,78,23);
+    background-color: rgb(99, 108, 118); /* RGB */
 }
 
 .tarjeta-4 {
     color: #fff;
-    background-color: hsl(120, 100%, 40%); /* HSL */
+    background-color: hsl(140, 80%, 20%); /* HSL */
+}
+
+.tarjeta-5 {
+    color: black;
+    background-color: rgb(213, 173, 220);
 }

@@ -16,15 +16,14 @@ body {
   
   .pixel-image {
     width: 100%;
-    height: auto;
-    image-rendering: pixelated; /* Mantener el efecto pixelado */
+    height: auto; /* Mantener el efecto pixelado */
   }
   
   .rotated-image {
     width: 100%;
     height: auto;
-    image-orientation: 90deg; /* Rotar la imagen */
-    transform: rotate(90deg);
+    image-orientation: 60deg; /* Rotar la imagen */
+    transform: rotate(60deg);
   }
   
   .aspect-ratio-container {
@@ -39,3 +38,9 @@ body {
     font-weight: bold;
   }
   
+ 
+  .espejo-horizontal {
+    transform: scaleY(-1); /* Refleja horizontalmente */
+  }
+
+

@@ -20,10 +20,11 @@ body {
     font-weight: bold;
   }
   .linear-gradient {
-    background: linear-gradient(to right, blue, pink);
+    background: linear-gradient(to bottom, red, orange, yellow, green, blue, purple, red) ;
+    
   }
   .radial-gradient {
-    background: radial-gradient(circle, yellow, green);
+    background: radial-gradient(red, orange, yellow, green, blue, purple, red);
   }
   .conic-gradient {
     background: conic-gradient(red, orange, yellow, green, blue, purple, red);

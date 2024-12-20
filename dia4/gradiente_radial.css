@@ -10,11 +10,11 @@ body {
 
 /* Estilo para el texto */
 .element {
-    width: 300px;
+    width: 500px;
     height: 300px;
     color: white;
     font-size: 3rem;
     text-align: center;
-    background: radial-gradient(circle, #ff7e5f, #feb47b); /* Gradiente radial */
-    
+    background: radial-gradient(#1838c7, yellow,red,green); /* Gradiente radial */
+    border-radius: 20px;
 }

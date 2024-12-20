@@ -20,15 +20,21 @@ body {
   }
   
   .image-container {
+
     width: 200px;
+
     height: 200px;
+
     position: relative;
-    overflow: hidden;
-    border: 2px solid #ddd;
+
     border-radius: 8px;
-    background-color: white;
+
+    margin-bottom: 20px;
+
+    border: 10px solid red;
+
   }
-  
+
   .image-container img {
     width: 100%;
     height: 100%;
@@ -47,6 +53,6 @@ body {
     object-fit: contain;
   }
   .image-container:nth-child(3) img {
-    object-fit: none;
+    object-fit: cover;
     object-position: center top;
   }

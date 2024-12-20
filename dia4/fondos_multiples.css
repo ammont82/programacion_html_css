@@ -1,0 +1,29 @@
+
+        body {
+            margin: 0;
+            height: 100%; /* Asegura que el fondo cubra toda la ventana */
+            /* Fondos múltiples */
+            background-image: 
+                url('imagen1.jpg'), /* Imagen de fondo */
+                linear-gradient(to bottom, rgba(0, 128, 255, 0.5), rgba(0, 0, 128, 0.8)), /* Degradado */
+                #222; /* Color sólido */
+            background-size: cover, cover, auto; /* Tamaño de cada fondo */
+            background-position: center, center, left top; /* Posición de cada fondo */
+        }
+
+        .content {
+            text-align: center;
+            color: white;
+            padding: 50px;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            font-size: 3em;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); /* Agrega sombra al texto */
+        }
+
+        p {
+            font-size: 1.5em;
+        }
+   

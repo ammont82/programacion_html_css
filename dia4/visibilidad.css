@@ -21,7 +21,7 @@
 }
 
 .transparent {
-    opacity: 0; /* Elemento transparente pero interactuable */
+    opacity: 0.2; /* Elemento transparente pero interactuable */
 }
 
 .removed {

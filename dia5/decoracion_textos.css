@@ -41,6 +41,14 @@ a {
 
 a:hover {
     text-decoration: underline;
-    text-decoration-color: #ff4500;
-    text-decoration-style: solid;
+    text-decoration-color: #c943e0;
+    text-decoration-style: dotted;
 }
+
+ul li {
+    text-decoration: overline;
+    text-decoration-style: wavy;
+    text-decoration-color: rgb(60, 164, 79);
+    text-decoration-thickness: 3px;
+}
+

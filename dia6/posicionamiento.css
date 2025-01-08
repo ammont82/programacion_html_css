@@ -1,0 +1,122 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  h1 {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  /* Contenedor relativo */
+  .relative-container {
+    position: relative;
+    width: 80%;
+    height: 200px;
+    margin: 20px auto;
+    background-color: #e8f5e9;
+    border: 2px solid #4CAF50;
+  }
+  
+  .relative-box {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    width: 150px;
+    height: 100px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 8px;
+  }
+  
+  .absolute-box {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    width: 150px;
+    height: 100px;
+    background-color: #FF5722;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 8px;
+  }
+  
+  /* Contenedor sticky */
+  .sticky-container {
+    width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fce4ec;
+    border: 2px solid #E91E63;
+  }
+  
+  .sticky-box {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: #E91E63;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  /* Contenedor fixed */
+  .fixed-container {
+    height: 200px;
+    margin: 40px auto;
+    position: relative;
+    background-color: #ede7f6;
+    border: 2px solid #673AB7;
+  }
+  
+  .fixed-box {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 150px;
+    height: 50px;
+    background-color: #673AB7;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 8px;
+  }
+  
+  /* Anchor Position */
+  .anchor-container {
+    height: 400px;
+    position: relative;
+    margin: 40px auto;
+    background-color: #e3f2fd;
+    border: 2px solid #2196F3;
+  }
+  
+  #anchor {
+    position: absolute;
+    inset: 50% auto auto 50%; /* Centra el anchor */
+    width: 0;
+    height: 0;
+    background: transparent;
+  }
+  
+  .anchor-box {
+    position: anchor;
+    anchor-name: anchor;
+    anchor-offset: 20px 20px;
+    width: 200px;
+    height: 100px;
+    background-color: #2196F3;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 8px;
+  }
+  

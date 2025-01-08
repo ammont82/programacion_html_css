@@ -44,6 +44,7 @@ body {
     margin: 0;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
     animation: fadeIn 2s ease-in-out;
+    color: white;
 }
 
 .overlay p {
@@ -58,7 +59,7 @@ body {
     top: -10%;
     color: #fff;
     font-size: 1.5em;
-    opacity: 0.8;
+    opacity: 1;
     animation: fall 10s linear infinite, drift 5s ease-in-out infinite;
 }
 

@@ -1,0 +1,46 @@
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(45deg, #ff7eb3, #8d7aff);
+      background-blend-mode: multiply;
+      color: white;
+    }
+
+    .card {
+      position: relative;
+      width: 300px;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* box-shadow */
+      filter: drop-shadow(5px 10px 15px rgba(0, 0, 0, 0.3)); /* drop-shadow() */
+    }
+
+    .card img {
+      width: 100%;
+      display: block;
+      filter: grayscale(50%) contrast(1.2); /* filter() */
+    }
+
+    .card h1 {
+      margin: 0;
+      padding: 20px;
+      font-size: 24px;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+      mix-blend-mode: screen; /* mix-blend-mode */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* text-shadow */
+    }
+
+    .card p {
+      margin: 0;
+      padding: 15px 20px;
+      background: rgba(0, 0, 0, 0.7);
+      font-size: 16px;
+      line-height: 1.5;
+    }

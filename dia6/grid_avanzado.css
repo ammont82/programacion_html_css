@@ -1,0 +1,85 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #eaeaea;
+    color: #333;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Contenedor de la cuadrícula */
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "sidebar main extra"
+      "footer footer footer";
+    grid-template-columns: 1fr 2fr 1fr; /* Tres columnas: sidebar, main, extra */
+    grid-template-rows: auto 1fr auto; /* Filas: header, contenido, footer */
+    gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Estilo de las áreas */
+  .header {
+    grid-area: header;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .sidebar {
+    grid-area: sidebar;
+    background-color: #2196F3;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .main {
+    grid-area: main;
+    background-color: #FF9800;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .extra {
+    grid-area: extra;
+    background-color: #9C27B0;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .footer {
+    grid-area: footer;
+    background-color: #607D8B;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  /* Estilo adicional para un diseño responsive */
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-areas:
+        "header"
+        "main"
+        "extra"
+        "sidebar"
+        "footer";
+      grid-template-columns: 1fr; /* Una sola columna en dispositivos pequeños */
+      grid-template-rows: auto;
+    }
+  }
+  

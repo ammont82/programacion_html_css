@@ -1,0 +1,76 @@
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth; /* scroll-behavior */
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 15px;
+      background: #333;
+      color: #fff;
+      text-align: center;
+      z-index: 1000;
+    }
+
+    .content {
+      margin-top: 80px; /* Espacio para el header fijo */
+      height: 2000px; /* Contenido largo para mostrar scroll */
+      background: linear-gradient(to bottom, #fff, #ddd);
+      padding: 20px;
+    }
+
+    .scroll-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #007BFF;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer; /* cursor personalizado */
+      outline: 2px dashed #0056b3; /* outline-* */
+      outline-offset: 4px; /* Separación del contorno */
+      transition: all 0.3s ease;
+    }
+
+    .scroll-to-top:hover {
+      background: #0056b3;
+      cursor: pointer; /* Cambia el cursor al pasar el ratón */
+      outline: 2px solid #003f7f;
+      outline-offset: 6px;
+    }
+
+    /* Personalización de la barra de desplazamiento */
+    body::-webkit-scrollbar {
+      width: 12px; /* scrollbar-width */
+      background: #f4f4f4;
+    }
+
+    body::-webkit-scrollbar-track {
+      background: #ddd; /* --webkit-scrollbar-track */
+      border-radius: 10px;
+    }
+
+    body::-webkit-scrollbar-thumb {
+      background: #007BFF; /* --webkit-scrollbar-thumb */
+      border-radius: 10px;
+    }
+
+    body::-webkit-scrollbar-thumb:hover {
+      background: #0056b3;
+    }
+
+    body::-webkit-scrollbar-button {
+      background: #ccc; /* --webkit-scrollbar-button */
+    }
+
+    body::-webkit-resizer {
+      background: #007BFF; /* --webkit-resizer */
+    }

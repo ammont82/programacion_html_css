@@ -22,7 +22,7 @@ p {
 }
 
 .highlight {
-    text-emphasis: open triangle #ff69b4;
+    text-emphasis: open double-circle #ff69b4;
     font-weight: bold;
     color: #c00;
 }
@@ -32,3 +32,13 @@ p {
     text-emphasis: filled dot #ff4500;
     text-emphasis-position: under;
 }
+.text {
+    font-family: Jost, sans-serif;
+    font-weight: bold;
+    font-size: 8rem;
+    background-image: url("logo.png");
+    background-size: 50%;
+    background-position: 25% 15%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }

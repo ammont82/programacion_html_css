@@ -1,0 +1,138 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Contenedor principal */
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      "header header header header"
+      "sidebar main main widget"
+      "sidebar main main extra"
+      "footer footer footer footer";
+    grid-template-columns: 1fr 2fr 2fr 1fr; /* 4 columnas con diferentes tamaños */
+    grid-template-rows: 100px auto auto 80px; /* Fila 1 y 4 con altura fija */
+    grid-auto-rows: minmax(100px, auto); /* Altura mínima para las filas automáticas */
+    gap: 15px; /* Espacio entre celdas */
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Áreas principales */
+  .header {
+    grid-area: header;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 8px;
+  }
+  
+  .sidebar {
+    grid-area: sidebar;
+    background-color: #2196F3;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .main {
+    grid-area: main;
+    background-color: #FF9800;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .widget {
+    grid-area: widget;
+    background-color: #9C27B0;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .extra {
+    grid-area: extra;
+    background-color: #FF5722;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .footer {
+    grid-area: footer;
+    background-color: #607D8B;
+    color: white;
+    text-align: center;
+    line-height: 80px;
+    border-radius: 8px;
+  }
+  
+  /* Elementos adicionales (Box 1, 2, 3) */
+  .item-1 {
+    background-color: #E91E63;
+    grid-column: 2 / span 2; /* Abarca 2 columnas */
+    grid-row: 2 / span 1; /* En la fila 2 */
+    padding: 20px;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+  }
+  
+  .item-2 {
+    background-color: #3F51B5;
+    grid-column: 4; /* En la última columna */
+    grid-row: 3; /* En la fila 3 */
+    padding: 20px;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+  }
+  
+  .item-3 {
+    background-color: #FFC107;
+    grid-column: 1 / span 4; /* Abarca todo el ancho */
+    grid-row: 4 / span 1; /* Justo encima del footer */
+    padding: 20px;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+  }
+  
+  /* Alineación y justificación */
+  .grid-container {
+    justify-items: stretch; /* Elementos se ajustan al ancho de su celda */
+    align-items: stretch;   /* Elementos se ajustan a la altura de su celda */
+  }
+  
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-areas:
+        "header"
+        "main"
+        "widget"
+        "sidebar"
+        "extra"
+        "item-1"
+        "item-2"
+        "item-3"
+        "footer";
+      grid-template-columns: 1fr;
+    }
+  }
+  

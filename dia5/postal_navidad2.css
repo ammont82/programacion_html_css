@@ -12,7 +12,7 @@ body {
 
 .card {
     position: relative;
-    width: 400px;
+    width: 500px;
     height: 600px;
     background-image: url('imagen_navidad.png');
     background-size: cover;
@@ -54,6 +54,7 @@ body {
     font-size: 2.5em;
     margin: 0;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    animation: glow 2s infinite;
 }
 
 .overlay p {
@@ -62,8 +63,8 @@ body {
 }
 
 .button {
-    background-color: #e63946;
-    color: #fff;
+    background-color: #f6f0f0;
+    color: #141414;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -73,7 +74,7 @@ body {
 }
 
 .button:hover {
-    background-color: #d62828;
+    background-color: #cdbaba;
 }
 
 /* Animación de copos de nieve */
@@ -84,6 +85,18 @@ body {
     font-size: 1.5em;
     opacity: 0.8;
     animation: fall 10s linear infinite, drift 5s ease-in-out infinite;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #E63946, 0 0 10px #E63946, 0 0 20px #E63946;
+    }
+    50% {
+        text-shadow: 0 0 20px #FF6B6B, 0 0 30px #FF6B6B, 0 0 50px #FF6B6B;
+    }
+    100% {
+        text-shadow: 0 0 5px #E63946, 0 0 10px #E63946, 0 0 20px #E63946;
+    }
 }
 
 @keyframes fall {

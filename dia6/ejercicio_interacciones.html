@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo CSS con Outline y Scrollbar</title>
+  <link rel="stylesheet" href="ejercicio_interacciones.css">
+</head>
+<body>
+  <header>
+    <h1>Ejemplo CSS: Outline, Cursor y Scrollbar</h1>
+  </header>
+
+  <div class="content">
+    <p>Desplázate hacia abajo para ver la barra de desplazamiento personalizada. Haz clic en el botón para volver al inicio.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin feugiat metus a metus pulvinar, a consequat justo ornare. Nulla facilisi. Curabitur eget eros sem. Aenean non lacus et nisl vehicula lacinia at vel erat.</p>
+    <p>Phasellus id nisi non metus eleifend aliquam at vitae augue. Maecenas eget tortor id arcu fermentum tincidunt. Pellentesque at tortor vitae eros iaculis viverra.</p>
+  </div>
+
+  <button class="scroll-to-top" onclick="scrollToTop()">Subir al inicio</button>
+
+  <script>
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth', // Usa scroll-behavior
+      });
+    }
+  </script>
+</body>
+</html>

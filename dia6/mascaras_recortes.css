@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+  background: linear-gradient(to bottom, #f9f9f9, #e3e3e3);
+}
+
+.article {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.image {
+  float: left; /* Hacemos flotar la imagen */
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  clip-path: circle(50% at 50% 50%); /* Recortamos la imagen en forma circular */
+  shape-outside: circle(50% at 50% 50%); /* Ajustamos el texto alrededor de la forma */
+  -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
+  -webkit-mask-composite: destination-in;
+  object-fit: cover;
+}
+
+.article img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta la imagen al contenedor */
+}
+
+.text {
+  margin: 20px;
+}
+
+.highlight {
+  background: linear-gradient(90deg, rgba(255, 0, 150, 0.3), rgba(0, 123, 255, 0.3));
+  clip-path: polygon(0% 0%, 80% 0%, 100% 100%, 0% 100%); /* Forma triangular */
+  padding: 10px;
+  margin: 20px 0;
+}
+
+.mask-image {
+  width: 100%;
+  height: 200px;
+  background: url('https://via.placeholder.com/800x200') no-repeat center / cover;
+  mask-image: linear-gradient(to right, black 60%, transparent);
+  -webkit-mask-image: linear-gradient(to right, black 60%, transparent); /* Compatibilidad */
+  margin: 30px 0;
+}

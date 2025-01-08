@@ -1,0 +1,10 @@
+.element {
+    text-align: center;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black;
+    outline-width: 5px;
+    outline-style: solid;
+    outline-color: blue;
+    outline-offset: 10px;
+  }

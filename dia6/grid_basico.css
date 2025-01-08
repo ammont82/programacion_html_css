@@ -1,0 +1,41 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Título */
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Contenedor de la cuadrícula */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas del mismo tamaño */
+    grid-template-rows: repeat(2, 150px); /* 2 filas de 150px */
+    gap: 10px; /* Espacio entre las celdas */
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  /* Elementos individuales */
+  .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    font-size: 24px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .item:hover {
+    background-color: #45a049;
+  }
+  

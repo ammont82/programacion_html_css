@@ -42,6 +42,7 @@ nav a:hover {
     width: 90%;
     margin: 20px auto;
     overflow: hidden; /* Para limpiar floats */
+    border: 1px solid red;
 }
 
 .sidebar {
@@ -65,8 +66,8 @@ nav a:hover {
 /* Sección de múltiples columnas */
 .multicolumn-section {
     column-count: 3;
-    column-gap: 20px;
-    background-color: #f9f9f9;
+    column-gap: px;
+    background-color: #bcb0b0;
     padding: 20px;
     border-radius: 8px;
     margin-top: 20px;
